@@ -8,14 +8,12 @@
         <ul class="nav flex-column">
           <li class="nav-item">
             <a class="nav-link d-flex align-items-center gap-2 active" aria-current="page" href="/">
-              <svg class="bi"><use xlink:href="#house-fill"/></svg>
               Dashboard
             </a>
           </li>
          
           <li class="nav-item">
             <a class="nav-link d-flex align-items-center gap-2" href="{% url 'users-list' %}">
-              <svg class="bi"><use xlink:href="#people"/></svg>
               {% if request.user.is_superuser %}
               Employees
               {% else %}
@@ -26,7 +24,7 @@
         
           <li class="nav-item">
             <a class="nav-link d-flex align-items-center gap-2" href="{% url 'payment-requests' %}">
-              <svg class="bi"><use xlink:href="#graph-up"/></svg>
+              
               Payment Requests
             </a>
           </li>
@@ -40,7 +38,6 @@
         <ul class="nav flex-column mb-auto">
           <li class="nav-item">
             <a class="nav-link d-flex align-items-center gap-2" href="{% url 'logout' %}">
-              <svg class="bi"><use xlink:href="#door-closed"/></svg>
               Sign out
             </a>
           </li>
