@@ -124,3 +124,5 @@ MEDIA_ROOT = os.path.join(BASE_DIR, "media")
 
 DEFAULT_AUTO_FIELD = "django.db.models.BigAutoField"
 LOGOUT_REDIRECT_URL = "home"
+
+CSRF_TRUSTED_ORIGINS = ["https://travel-reimbursement-platform.onrender.com"]
